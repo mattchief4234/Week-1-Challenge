@@ -44,10 +44,17 @@
     
   }
   
+  aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: left;
+  }
+    
+
   .first-image {
     width: 100%;
     height: auto;
-    
   }
   
   footer {
