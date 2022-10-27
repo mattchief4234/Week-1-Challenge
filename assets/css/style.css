@@ -14,8 +14,6 @@
   header {
     padding: 10px;
     text-align: center;
-    
-    
   }
   
   nav {
@@ -31,6 +29,13 @@
     text-align: center;
   }
   
+  section {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
   main {
     display: flex;
 
@@ -39,9 +44,8 @@
     flex-grow: 1;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-right: 150px;
-    margin-left: 150px;
-    
+    margin-left: 15%;
+    margin-right: 15%;
   }
   
   .left {
@@ -50,21 +54,29 @@
     padding: 50px;
     text-align: center;
     color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    margin-top:17px;
+    margin-bottom: 17px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   
   .left-pic {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
   }
 
 
 
   .first-image {
-    width: 100%;
-    height: auto;
+    
+    max-width: 110%;
+    max-height: auto;
   }
   
   footer {
@@ -78,38 +90,42 @@
   }
   
   .products {
-    flex: 4;
+    flex: 5;
     padding: 10px;
-    display: flex;
+    display: wrap;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    margin: 2px;
-    
+    margin: 2px;  
   }
+
   .tabs-pics {
     display: block;
     justify-items: left;
     width: 200px;
     height: 150px;
-
   }
 
   .tabs {
     text-align: center;
     color: white;
-
   }
+
   #float-right {
     float: right;
-
   }
+
   #float-left {
     float: left;
-
   }
 
-  /* TODO: Add properties to the cards to achieve the required look */
+  #contact {
+    float: right;
+    width: 150px;
+    height: 100px;
+  }
+
+  
   .options {
     border-style: solid;
     border-width: 1px;
@@ -125,19 +141,13 @@
     text-size: 2;
   }
   
-  .options p {
-   
+  button:hover{
+     cursor: pointer;
   }
-  
-  .options img {
-    
+  button:active {
+    background-color:blue;
+    color:white;
   }
+
   
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
-    }
-  }
-  
-  
+
